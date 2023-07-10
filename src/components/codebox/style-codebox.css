@@ -1,0 +1,16 @@
+.codebox {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  background-color: #dfdfdf;
+  color: #101010;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .codebox {
+    width: 400px;
+    font-size: 0.45rem;
+  }
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 30px 60px;
+  font-family: "Roboto Mono";
+  height: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+article {
+  margin-bottom: 48px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 0px;
+    font-family: "Roboto Mono";
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 400px;
+  }
+
+  p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  article {
+    margin-bottom: 24px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+  }
+
+  ul {
+    margin-bottom: 5px;
+  }
+}

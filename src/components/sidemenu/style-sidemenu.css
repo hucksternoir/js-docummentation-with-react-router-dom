@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  height: 100%;
+  background-color: #f7df1e;
+  font-family: "Roboto", monospace;
+}
+
+@media (max-width: 600px) {
+  aside {
+    display: none;
+  }
+}
+
+aside h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.buttonFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title-menu {
+  background-color: #f7df1e;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#menu-options {
+  color: #000;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+#menu-options a {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: #f8e75d;
+}
+
+.option {
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: #f8e75d;
+}
+
+.submenu {
+  display: block;
+  border-top: 1px solid #000;
+  background-color: #f2f2f2;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5px 0 0 5px;
+  margin: 0;
+}
+
+.sub-option {
+  font-size: 0.85rem;
+  padding: 10px 15px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sub-option:hover {
+  background-color: #d7d7d7;
+  cursor: pointer;
+}
+
+.sub-option a {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sub-option a:hover {
+  background-color: #d7d7d7;
+}
+
+#submenu-1 {
+  display: none;
+}
+
+#submenu-1.active {
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease;
+}
+
+#submenu-1.desactive {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.5s ease;
+}
